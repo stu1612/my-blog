@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* html {
+  height: 100%;
+} */
+
+p,
+small {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+@layer components {
+  .banner {
+    @apply bg-gradient-to-b from-blue to-green dark:bg-gradient-to-b dark:from-pink dark:to-darkOrange;
+  }
+
+  .active-link {
+    @apply underline decoration-blue dark:decoration-red decoration-solid decoration-4 underline-offset-8;
+  }
+
+  .link {
+    @apply px-8 py-6 text-xl lg:text-2xl;
+  }
+
+  .active-mobile-link {
+    @apply flex flex-col justify-center items-center uppercase text-blue dark:text-red text-xs;
+  }
+
+  .mobile-link {
+    @apply flex flex-col justify-center items-center uppercase text-xs;
+  }
+
+  .text {
+    @apply leading-relaxed text-xl;
+  }
+
+  .baseInput {
+    @apply outline-none w-full rounded-sm focus:ring-2 transition ease-linear focus:ring-black dark:focus:ring-white bg-white dark:bg-black text-black dark:text-white;
+  }
+
+  .input {
+    @apply py-2 px-4;
+  }
+
+  .textfield {
+    @apply p-4;
+  }
+}

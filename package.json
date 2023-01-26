@@ -6,9 +6,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.4",
+    "@graphcms/rich-text-react-renderer": "^0.6.1",
+    "@next/font": "^13.1.5",
+    "@tailwindcss/typography": "^0.5.9",
+    "graphql": "^16.6.0",
+    "graphql-request": "^5.1.0",
     "next": "latest",
+    "next-themes": "^0.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-loader-spinner": "^5.3.4"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
